@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+  </head>
+  <body>
+    <div id="container">
+      <div>
+        <h1 id="title">Dice Roll</h1>
+      </div>
+      <div id="game">
+        <div id="usercontainer">
+          <div id="die1" class="userdice">0</div>
+          <div id="die2" class="userdice">0</div>
+          <h2 id="status" style="clear:left;"></h2>
+        </div>
+        <div id="pccontainer">
+          <div id="pcdie1" class="pcdice">0</div>
+          <div id="pcdie2" class="pcdice">0</div>
+          <h2 id="pcstatus" style="clear:right;"></h2>
+        </div>
+      </div>
+      <div id="container2">
+        <div id="setbet">
+          <h4 id="set">Set bet amount</h4>
+          <input id="betcheckbox25" class="checkbox" type="radio" name="amount"><span class="spanamount">$25</span><br>
+          <input id="betcheckbox50" class="checkbox" type="radio" name="amount"><span class="spanamount">$50</span><br>
+          <input id="betcheckbox100" class="checkbox" type="radio" name="amount"><span class="spanamount">$100</span><br>
+          <input id="betcheckboxall" class="checkbox" type="radio" name="amount"><span class="spanamount">All-in</span><br>
+        </div>
+        <h1 id="final">Click to play</h1>
+        <div id="button">
+          <button onclick="game()">Roll Dice</button>
+        </div>
+        <h3 id="money">$500</h3>
+
+      </div>
+    </div>
+  </body>
+</html>
